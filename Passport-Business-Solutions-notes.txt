@@ -1,0 +1,99 @@
+Babikow seems to be running Passport Business Solutions(TM) version 11.4.3.
+
+See "Research sources used", below.
+
+"Passport Business Solutions, based on the RealWorld Classic accounting software, is the latest Windows release of the reliable modular business and accounting system. Now includes special forma printing, reducing outside pritning costs. Enhanced database "Lookups" offer new data access capability. Optional ODBC (Open Data Base Connectivity) provides superior, custom-designed reports by allowing data to be exported into Excel, Crystal Reports, and other ODBC-compliant report tools."
+
+- from http://www.accountingsoftware411.com/SoftwareDirectory/softwareview.aspx?sid=RW326E3A75s
+
+"Options and Interfaces  | Learn More
+The PBS Manufacturing Series software may be integrated with the PBS financial packages. This integration minimizes duplicate data, and maximizes your investment by helping you gain control of your entire business.
+One of the most common forms of customization requested is reports. Everyone has a way they wish to see their information and often that's unique to the individual company. ODBC™ will allow you to have direct, read-only access to your data files from any program with the ability to read ODBC files. What's this mean to you? You can use tools like Access, Excel, Crystal Reports and any other ODBC compliant application to view the information in your database. Write custom reports, add external applications unique for your company using Access"
+
+- from http://www.pass-port.com/mfg.htm
+- and from http://factorysoftsolutions.com/prod2.html
+
+
+"AcuODBC® | Learn More - View Demo
+Real-time reporting information is vital. Open Data Base Connectivity (ODBC), is a quick and easy method for accessing data within Passport Business Solutions.
+By utilizing AcuODBC with the Passport Business Solutions data dictionary files, you gain direct read/write or read-only access to our program files for common reporting and data manipulation using Microsoft Excel, Lotus, Microsoft Access, Crystal Reports or other ODBC compliant tools.
+Rapid workstation installation has you accessing the PBS data files within minutes."
+
+- from http://www.pass-port.com/tec.htm
+
+"Tuesday, January 22, 2008 10:00 am
+Central Standard Time (GMT -06:00, Chicago) Change time zone
+  	January 22, 2008 11:00 am
+Eastern Standard Time (GMT -05:00, New York)
+  	January 22, 2008 8:00 am
+Pacific Standard Time (GMT -08:00, San Francisco)
+Duration: 	45 minutes
+Description: 	WHAT YOU WILL LEARN
+During this web conference you will learn the benefits of Passport Business Solutions, including:
+
+Ease of upgrading to a fully supported Windows, Unix, or Linux environment
+Enhancements and Features in the new PBS
+Availability of a wide range of modules and solutions to fit your business, including ODBC, Thin Client, Data Import, Manufacturing and more."
+
+- from https://passportsoftware.webex.com/ec0509l/eventcenter/event/eventAction.do?theAction=detail&siteurl=passportsoftware&confViewID=340140023&path=listevents_program
+
+"ODBC" demo:
+
+- at http://www.pass-port.com/tpa/odbc.html
+
+"VERSION 10.4 AND EARLIER
+
+1. BREAKOUT™
+The BreakOut™ utility allows a user to input field default information. This includes skipping fields, default values, default function keys and more. These defaults are user specific. This saves data entry time and reduces data entry errors.
+
+2. OPEN DATABASE CONNECTIVITY (ODBC)
+The ODBC interface, available separately, provides a link between PBS data and other ODBC compliant applications such as MS Excel, MS Access and Crystal Reports.
+
+With the ODBC interface you can select data fields from PBS files and view the data in a report, spreadsheet or more."
+
+- from PBS.doc
+
+"PBS Manufacturing Series fully integrated with Passport Business Solutions Version 11.4.
+Customers who manufacture items and currently track those items on separate applications/spreadsheets can now add Passport Business Solutions Manufacturing to their suite of modules. Full information on this solution is located on the Passport Software, Inc. website." - www.pass-port.com/newweb/Passport/Website/Homepage/Solutions/Solutions.htm#inventorymgt
+
+- from 11.4info.pdf
+
+"PASSPORT BUSINESS SOLUTIONS™— AcuODBC®
+Real-time reporting information is vital. Open Data Base Connectivity (ODBC), is a quick
+and easy method for accessing data within Passport Business Solutions.
+By utilizing AcuODBC with the Passport Business Solutions data dictionary files, you
+gain direct read/write or read-only access to our program files for common reporting and
+data manipulation using Microsoft Excel, Lotus, Microsoft Access, Crystal Reports or
+other ODBC compliant tools.
+Rapid workstation installation has you accessing the PBS data files within minutes."
+
+- from pbsfs-odbc.pdf
+
+--------------------------
+Research sources used, and found to contain the words Excel, CSV or spread:
+
+http://www.accountingsoftware411.com/SoftwareDirectory/softwareview.aspx?sid=RW326E3A75s
+
+http://factorysoftsolutions.com/prod2.html
+
+http://www.pass-port.com/mfg.htm
+http://www.pass-port.com/tec.htm
+http://www.pass-port.com/tpa/odbc.html
+
+https://passportsoftware.webex.com/ec0509l/eventcenter/event/eventAction.do?theAction=detail&siteurl=passportsoftware&confViewID=340140023&path=listevents_program
+
+11.4info.pdf
+
+PBS.doc (inside PBS.zip)
+
+pbsfs-odbc.pdf
+
+The following do not contain, regardless of case, the words Excel, CSV or spread:
+
+113newfeat.pdf (within 113newfeat.zip)
+
+dazor.pdf
+
+f115.pdf
+
+All these (today) were available at http://www.pass-port.com/PassportWebsite/Homepage/Solutions/PassportBusinessSolutions/PBSARWebPages/PBSARDataSheets.htm

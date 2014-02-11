@@ -1,0 +1,11 @@
+Output directory:
+C:\Mark-develop\output\RealWorld-Excel
+
+Inputs:
+OK C:\Mark-develop\static\RealWorld-Excel\Customer-item-summary\2005.htm
+
+OK C:\Mark-develop\static\RealWorld-Excel\Item-totals\fall 07.html
+
+OK C:\Mark-develop\static\RealWorld-Excel\Products-customers\donald-pansies-2.htm
+
+C:\Mark-develop\static\RealWorld-Excel\Sales-volume\file.txt

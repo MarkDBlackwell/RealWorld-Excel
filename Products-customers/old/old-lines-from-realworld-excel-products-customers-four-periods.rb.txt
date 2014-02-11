@@ -1,0 +1,118 @@
+#-------------------------
+#Locate the summary section.
+#  SUMMARY_INDICATOR_LOCATION=33-1..45-1
+#  SUMMARY_START_LINE=(0...lines.length).detect {|i| 'S U M M A R Y'==lines[i][
+#  SUMMARY_INDICATOR_LOCATION]}
+#p SUMMARY_START_LINE
+
+#Fix HTML problems.
+#p PECULIAR_HTML_LINES.length
+#PECULIAR_HTML_LINES[-3,3].each {|i| puts lines[i]}
+#  r=Regexp.new(/&AMP;/, Regexp::IGNORECASE)
+#  r=Regexp.new(/&AMP;/)
+#  m=r.match lines[i]
+#  unless m.nil? || 0==m.length
+#    p m.length
+#    p lines[i]
+#    abort
+#  end
+#  p lines[i].scan('&').length
+#PECULIAR_HTML_LINES.each do |aLine|
+#  unless lines[aLine].scan('&').length==lines[aLine].scan('&amp;').length
+#    p lines[aLine].scan('&').length
+#    p lines[aLine]
+#    abort
+#  end
+#end
+#aLine=PECULIAR_HTML_LINES.detect {|i| lines[i].include? '&'}
+
+#SPURIOUS_EXTRA_TOTAL_LINES_SIZE=3
+#FIRST_CUSTOMER_START_LINES=
+#      product_start_lines.collect do |aLine|
+#  check=aLine + PRODUCT_INFO_SIZE + SPURIOUS_EXTRA_TOTAL_LINES_SIZE
+#  if 'Qty sold:'==lines[check][QUANTITY_INDICATOR_LOCATION]
+#    check
+#  else
+#    aLine + PRODUCT_INFO_SIZE
+#  end
+#end
+
+#Assume that every page has a product name at the top.
+#Test for this.
+#a=(0...lines.length).find_all {|i| '<PRE class=Details>'==lines[i][1-1..19-1]}
+#p a
+#a[1]-=1
+#a.each do |i|
+#  b=lines[i+2][1-1..6-1]
+#  unless 'Unit ='==b
+#    puts lines[i+2]
+#  end
+#end
+
+#Locate the start of the first product.
+#FIRST_PRODUCT_START_LINE=(0...lines.length).detect {|i| '<PRE class=Details>'==lines[i][
+#DETAIL_PAGE_INDICATOR_LOCATION]} + 1
+#product_start_lines=Array.new
+#product_start_lines.push(
+#FIRST_PRODUCT_START_LINE)
+
+#Locate the start of each product.
+#Find the product information.
+#PRODUCT_INFO_INDICATOR_LOCATION=1 -1..6 -1
+#   CONTINUED_INDICATOR_LOCATION=71-1..77-1
+#a=(0...SUMMARY_START_LINE).find_all do |i|
+#  'Unit ='  ==lines[i  ][PRODUCT_INFO_INDICATOR_LOCATION] &&
+#  '(Cont.)' !=lines[i-1][   CONTINUED_INDICATOR_LOCATION]
+#end
+#PRODUCT_INFO_LINES=a.collect {|e| e - 1}
+#p PRODUCT_INFO_LINES
+
+#Set up the product lines.
+#PRODUCT_LINES=
+#product_start_lines.collect {|aLine| [aLine, aLine + 1]}
+#PRODUCT_LINES.each {|a| a.each {|aLine| columns.puts lines[aLine]}}
+
+#Build fields for each detail point.
+#product_info_first_line_locations=Array.new
+#PRODUCT_INFO_FIRST_LINE_FIELDS_START.length.times do |i|
+#  product_info_first_line_locations.push(
+#  PRODUCT_INFO_FIRST_LINE_FIELDS_START[i]-1..
+#  PRODUCT_INFO_FIRST_LINE_FIELDS_END[  i]-1)
+#end
+#product_info_second_line_locations=Array.new
+#PRODUCT_INFO_SECOND_LINE_FIELDS_START.length.times do |i|
+#  product_info_second_line_locations.push(
+#  PRODUCT_INFO_SECOND_LINE_FIELDS_START[i]-1..
+#  PRODUCT_INFO_SECOND_LINE_FIELDS_END[  i]-1)
+#end
+# product_info_first_line_locations.length.times do |k|
+#   detail.push(lines[i][product_info_first_line_locations[k]])
+# end
+
+#Write
+#product_start_lines.length.times do |i|
+#  columns.puts lines[product_start_lines[i]  ]
+#  columns.puts lines[product_start_lines[i]+1]
+#  position=PRODUCT_END_LINES[i]
+#  3.times do
+#    columns.puts lines[position]
+#    position=skip_page_header(lines,position + 1)
+#  end
+#  columns.puts fields[i]
+#end
+
+#Loose code:
+#  if '</PRE>'==lines[position                    ][PRE_INDICATOR_LOCATION] ||
+#     '</PRE>'==lines[position + PRODUCT_INFO_SIZE][PRE_INDICATOR_LOCATION]
+#--
+#(PRODUCT_END_LINES.length - 1).times do |i|
+#--
+#product_start_lines.each_index do |i|
+#--
+#FIRST_CUSTOMER_START_LINES.each_index do |i|
+#--
+#   position=skip_page_header(  lines,position + CUSTOMER_SIZE)
+#--
+#    columns.print(product_fields[i].join("\t")+"\t")
+#    columns.print(a1.join("\t")+"\n")
+#--
